@@ -1,0 +1,716 @@
+/* CUSTOM FONT FAVORITMONO-REGULAR */
+@font-face {
+  font-family: 'FavoritMono-Regular';
+  src: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/67239c4e144f8f796325908b/1730387022596/FavoritMono-Regular.otfFontURL');
+}
+
+:root {
+    --tweak-newsletter-block-button-background-color: #2C272A;
+  --tweak-newsletter-block-button-text-color: #2C272A;
+}
+
+h1 {
+  font-family: 'FavoritMono-Regular';
+	text-transform: uppercase;
+}
+h2 {
+  font-family: 'FavoritMono-Regular';
+	text-transform: uppercase;
+}
+h3 {
+  font-family: 'FavoritMono-Regular';
+  text-transform: uppercase;
+}
+h4 {
+  font-family: 'FavoritMono-Regular';
+	text-transform: uppercase;
+}
+
+p {
+  font-family: 'FavoritMono-Regular';
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* REMOVE HEADER AND FOOTER FROM SPLASH & HOME PAGE */
+#collection-67239a1574aed97b3c95e8c9 {
+  footer, header{
+    display: none !important;
+  }
+}
+
+#collection-67239a0b61c0c14884f360f4 {
+  footer, header {
+    display: none !important;
+  }
+}
+
+/* H4 VERTICAL TEXT */
+
+h2 { 
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0 auto;
+  position: relative;
+  right: 10px;
+}
+
+
+/* FORM BLOCKS TRANSPARENT FILL */
+
+.newsletter-form-field-element { 
+  background: none !important;
+  border: solid 2px #FFFFFF !important;
+  text-transform: lowercase !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+/* MOBILE NAV WHITE */
+@media only screen and (max-width: 767px){
+  header#header {
+    background-color: #FFFFFF !important;
+  }
+}
+
+/* custom button colors for bodywork */
+#block-1db3b1722f8a17cc3aa0 a {
+  color: #780000;
+  border: #780000;
+}
+
+/* HIDDEN ELEMENTS ON MOBILE */
+
+@media only screen and (max-width: 768px) {
+  #block-yui_3_17_2_1_1730386310595_29373, 
+  #block-702a6496098ac23b2e77, 
+  #block-2913455a041ed6a6c598, 
+  #block-ec10724b9308473e3f92, #block-ee9ce903d05a08b54cc9, #block-d8bd492db30635140066, #block-e507aec9e928b5b33531, #block-75919de857ee74f63926, #block-6fb0e9db8714e48a359a, #block-yui_3_17_2_1_1730386310595_16966 {
+    display: none;
+  }
+}
+
+/* CUSTOM CURSOR */
+
+html, body {
+     cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png), auto;
+   }
+
+a:hover {
+cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f18596ff9f5c0ac20320/1730474373912/Metaphysica_Logomark_Black.png), auto !important; 
+}
+
+input {
+cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png), auto !important; 
+}
+
+textarea {
+cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png), auto !important;
+}
+
+.sqs-system-button {
+    cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png),auto !important;
+}
+
+section.divider {
+  min-height: 15vh !important;
+  .content-wrapper {
+    padding: 0 !important;
+  }
+  .sqs-block-horizontalrule hr {
+    height: 2px !important;
+    color: #2C272A !important;
+  }
+}
+
+/*NEWSLETTER CUSTOM INPUT*/
+
+.newsletter-form-body input,
+newsletter-form-body button.newsletter-form-button {
+  height: 4.3rem;
+}
+
+section[data-section-id="67243d3c054ee0467ae44686"] #email-yui_3_17_2_1_1730387644300_10274-field::placeholder,
+#email-yui_3_17_2_1_1730387644300_10274-field::placeholder {
+  font-family: 'FavoritMono-Regular';
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+input.newsletter-form-field-element:hover,
+input.newsletter-form-field-element:focus {
+    outline: none; 
+}
+
+button.newsletter-form-button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+div.newsletter-form-button-wrapper button.newsletter-form-button {
+    border: none !important;
+}
+
+button.newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-editable-button-style.sqs-editable-button-shape.sqs-button-element--primary:hover {
+    background-color: unset !important;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-underline + span {
+  text-decoration: none; 
+  margin-left: 5px; 
+}
+.newsletter-block .newsletter-form-button:hover {
+  cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f18596ff9f5c0ac20320/1730474373912/Metaphysica_Logomark_Black.png), auto !important; 
+}
+
+section[data-section-id="67243d3c054ee0467ae44686"] {
+  .newsletter-form-field-element:hover,
+  .newsletter-form-field-element:focus {
+    outline: none; 
+  }
+  .newsletter-form-field-element::placeholder {
+    color: #2C272A !important;
+  }
+  .newsletter-form-button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .newsletter-form-field-element { 
+    background: none !important;
+    border: solid 2px #2C272A !important;
+    text-transform: lowercase !important;
+    color: #2C272A !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+  
+  button.newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-editable-button-style.sqs-editable-button-shape.sqs-button-element--primary:hover {
+    background-color: unset !important;
+  }
+  .primary-button-style-outline .newsletter-form-button.sqs-system-button.sqs-button-element--primary:hover {
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 579px) {
+  .newsletter-block .newsletter-form-body {
+      padding: 0 0 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+	}
+  .newsletter-block .newsletter-form-field-wrapper {
+      min-width: 50%;
+	}
+  .newsletter-block .newsletter-form-button {
+    padding: 1.4rem 1.2rem !important;
+  }
+}
+
+section.extendable-section {
+  display: flex;
+  color: #2C272A;
+}
+
+section.extendable-section:not('.hidden-area') .content {
+  width: calc(100% - 10rem) !important;
+  margin: 0 auto;
+}
+
+section.extendable-section:not('.hidden-area') .fluid-engine {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.extendable-section.hidden-content .fluid-engine:not(.is-editing) {
+  display: none; 
+}
+
+section.extendable-section.hidden-content .fluid-engine.is-editing {
+  display: grid; 
+}
+
+section.extendable-section.hidden-content {
+  display: none;
+}
+
+section.extendable-section.hidden-content {
+  min-height: 30vh !important;
+  .content-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+section.extendable-section:not(.hidden-content) {
+  min-height: 20vh !important;
+  .content-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* for the last drawer section */
+section[data-section-id="6731176c7bdaf21f04568262"] {
+  min-height: 30vh !important;
+}
+
+@media (max-width: 579px) {
+  section.divider {
+    min-height: 8vh !important;
+  }
+  section.extendable-section:not(.hidden-content) {
+    min-height: 15vh !important;
+  }
+  section.extendable-section:not(.hidden-area) .content {
+    width: calc(90%) !important;
+    margin: 0 auto !important;
+  }
+  section.extendable-section:not(.hidden-area) .fluid-engine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.section-title {
+  font-family: 'FavoritMono-Regular';
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: 400;
+}
+
+.toggle-button {
+  font-family: 'FavoritMono-Regular';
+  font-size: 40px;
+  line-height: 48px;
+  color: #2C272A;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+} 
+
+.toggle-button:focus {
+  outline: none; 
+}
+
+.toggle-arrow {
+  transition: transform 0.2s ease;
+}
+
+.custom-arrow {
+  width: 47px;
+  height: 45px;
+  stroke-width: 2;
+}
+
+#therapist_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px; 
+  max-width: 1120px; 
+  margin: 0 auto; 
+  font-family: 'FavoritMono-Regular';
+}
+
+.therapist {
+  padding: 10px;
+}
+
+.therapist-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 32px;
+  
+  p {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+  }
+}
+.hidden-area .sqs-html-content h4 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 1rem !important;
+}
+
+.hidden-area .sqs-html-content p {
+  font-size: 14px;
+  color: #000;
+  margin-top: 4px; 
+}
+
+.therapist-type {
+  font-size: 14px;
+  color: #666;
+  line-height: 17px; 
+}
+
+/* blog page */
+.blog-section {
+  .fluid-engine {
+    &:not(.is-editing) {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      max-width: 1400px;
+      margin: auto;
+
+      > div:first-child {
+        flex: 2;
+        // width: 66.666%;
+        // height: 100%;
+
+        .summary-item {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .summary-thumbnail-outer-container {
+            a {
+              margin: 0;
+              
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+
+      > div:nth-child(2) {
+        flex: 1;
+        // width: 33.334%;
+        // height: 100%;
+
+        .summary-item-list {
+          display: flex;
+          flex-direction: column;
+          height: 100% !important;
+          gap: 20px;
+
+          .summary-item {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+
+            .summary-thumbnail-outer-container {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+			
+              * {
+                width: 100%;
+                height: 100%;
+                  
+                .summary-thumbnail {
+                  padding: 0;
+
+                  img {
+                    object-fit: cover; 
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .sqs-gallery-design-autocolumns-slide {
+      position: static;
+	  }
+  }
+}
+
+.blog-section {
+  .summary-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'FavoritMono-Regular';
+    font-weight: 400;
+
+    > div {
+      color: #fff;
+
+      time {
+        color: #fff;
+      }
+    }
+    
+    .summary-title {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    } 
+    
+    .summary-excerpt {
+      font-size: 1rem;
+      line-height: 19px;
+      color: #fff;
+    }
+    
+    .summary-metadata {
+      margin-top: 1rem;
+      .summary-metadata-item {
+        opacity: 1;
+        a {
+          color: #fff;
+          font-size: 1rem;
+	      line-height: 19px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 579px) {
+  .section-title {
+    font-size: 48px;
+    line-height: 57px;
+  }
+  span.toggle-text {
+    display: none;
+  }
+  #therapist_list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  /* blog on mobile */
+  .blog-section .fluid-engine:not(.is-editing) {
+    flex-direction: column;
+  }
+  .blog-section .fluid-engine:not(.is-editing)>div:first-child {
+    flex: 1;
+  }
+}
+
+section[data-section-id="672437714b6da543427a1216"] {
+  .summary-content {
+    color: #2C272A !important;
+    font-family: 'FavoritMono-Regular';
+    font-weight: 400;
+    
+    .summary-title {
+      a {
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+      }
+    }
+    
+    .summary-excerpt {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      line-height: 19px;
+      color: #2C272A;
+    }
+    
+    .summary-metadata {
+      .summary-metadata-item {
+        a {
+          font-size: 1rem;
+	      line-height: 19px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+/* big custom buttons */
+.btn.btn-custom {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'FavoritMono-Regular';
+  line-height: 1;
+  padding: 0;
+  width: 63px;
+  height: 36px;
+  transition: 0.5s;
+}
+.btn-custom--primary {
+  border: 1.5px solid #FF725C;
+  color: #FF725C;
+}
+.btn-custom--primary:hover {
+  background-color: #FF725C;
+  color: #fff;
+}
+.btn-custom--secondary {
+  border: 1.5px solid #FFF;
+  color: #FFF;
+}
+.btn-custom--secondary:hover {
+  border: 1.5px solid #FF725C;
+  background-color: #FF725C;
+  color: #fff;
+}
+.btn-custom--third {
+  border: 1.5px solid #780000;
+  color: #780000;
+}
+.btn-custom--third:hover {
+  border: 1.5px solid #FF725C;
+  background-color: #FF725C;
+  color: #fff;
+}
+
+.btn.btn-big-primary {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: 'FavoritMono-Regular';
+  font-size: 900%;
+  white-space: nowrap;
+  cursor: ponter;
+}
+.btn.btn-big-primary:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.summary-item:nth-child(2){
+  margin-top: 2px;
+}
+
+/* HAMBURGER ICON ON MOBILE */
+
+.burger {   
+/* background-image: url(‘https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f2b4137ff53171ee5e09/1730474676021/Mobile+Menu+Black.png’); */
+  background-image: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f2b4137ff53171ee5e09/1730474676021/Mobile+Menu+Black.png');
+  /* background-size: contain;      
+  background-position: right; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent !important;   
+  width: 55px;
+  height: 100%; 
+}  
+
+/* burger icons on mobile */
+/* massage */
+body#collection-67239e165ac8aa5ed5015217 .header-burger-btn.burger {
+  background-image: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/673ecdd6e13b67531ab5a863/1732169174883/mobile_menu_massage.png');
+}
+
+/* bodywork */
+body#collection-672439ee6327c001c4350cd9 .header-burger-btn.burger {
+  background-image: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/673ececb2ca8451045730db7/1732169419698/mobile_menu_bodywork.png');
+}
+
+/* sauna */
+body#collection-6723c46cea42c01d28d9b79e .header-burger-btn.burger {
+  background-image: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/673ecf3ae13b67531ab5df88/1732169530509/mobile_menu_sauna.png');
+}
+
+.burger-inner {   
+  display: none; 
+}
+
+.burger.burger--active {
+  background-image: none;
+}
+.burger.burger--active .burger-inner {
+  display: block; 
+}
+
+/* RIGHT ALIGN TEXT ON HOMEPAGE */
+@media only screen and (max-width: 767px) {
+  #block-yui_3_17_2_1_1730398303576_306750, #block-dd15ba02394f3b5f8483, #block-9f0d9aa829e01a56369a { 
+    text-align: RIGHT; 
+  }}
+
+/* mobile nav menu */
+.header-menu-nav-folder-content {
+  display: block;
+}
+.header-menu-nav-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  
+  > div {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .mobile-nav-item {
+    padding: 3vw 6vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'FavoritMono-Regular';
+    font-weight: 400;
+    
+    .container {
+      padding: 0;
+      
+      & > a {
+        margin: 0;
+        font-size: unset;
+        color: #2C272A !important;  
+      }
+    }
+  }
+  
+  .nav-list--primary {
+    gap: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+  
+  .nav-list--secondary {
+    gap: 2.1rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  
+  .nav-list--third {
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    padding: 3vw 6vw 6vw;
+    a {
+      text-transform: capitalize; 
+    }
+  }
+}
