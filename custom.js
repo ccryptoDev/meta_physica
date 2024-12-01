@@ -1,6 +1,16 @@
 <script>
-
+  
 document.addEventListener("DOMContentLoaded", function () {
+  /* document.querySelectorAll("a").forEach(link => {
+        link.style.cursor = "url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f6267e5d6c6fb66e0fef/1732572710939/Logomark_Orange.png') 32 32, auto !important";
+    });
+
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("mouseover", () => {
+            link.style.cursor = "url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f647d75db40e89395eef/1732572743173/Logomark_Black.png') 32 32, auto !important";
+        });
+    }); */
+  
   /*
   * Redirect to Home when clicking on Splash
   */
@@ -9,11 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var splashPage = document.querySelector('body#collection-67239a1574aed97b3c95e8c9');
     if (splashPage) {
       console.log('splash page!!!')
-      splashPage.addEventListener("click", function(event) {
-        event.preventDefault(); 
-        console.log('Image clicked! Redirecting to home...');
-        window.location.href = "/home";
-      });
+      splashPage.addEventListener("click", function (event) {
+        if (!event.defaultPrevented) { // Ensure it hasn't been handled already
+          event.preventDefault();
+          console.log('Image clicked! Redirecting to home...');
+          window.location.href = "/home";
+        }
+      }, { once: true }); // Ensures the event listener is triggered only once
     } 
   }
   
@@ -39,6 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const massageRoomDivider = document.querySelector('[data-section-id="673ab4ba18cc943de2c47225"]');
     massageRoomDivider.classList.add("divider");
   }
+  // divider of the last drawer
+  if (document.querySelector('[data-section-id="674bce80c6aa4452cac62959"]')) {
+    const lastDivider = document.querySelector('[data-section-id="674bce80c6aa4452cac62959"]');
+    lastDivider.classList.add("divider");
+  }
   
   // bodywork page
   // Process
@@ -50,6 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector('[data-section-id="6740feedf6146a12dfff05ed"]')) {
     const divider = document.querySelector('[data-section-id="6740feedf6146a12dfff05ed"]');
     divider.classList.add("divider");
+  }
+  // divider of the last drawer
+  if (document.querySelector('[data-section-id="674bcf459a090574e2cfb955"]')) {
+    const lastDivider = document.querySelector('[data-section-id="674bcf459a090574e2cfb955"]');
+    lastDivider.classList.add("divider");
   }
   
   // Sauna page
@@ -72,6 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector('[data-section-id="674103721435b762a1f1bc37"]')) {
     const divider = document.querySelector('[data-section-id="674103721435b762a1f1bc37"]');
     divider.classList.add("divider");
+  }
+  // divider of the last drawer
+  if (document.querySelector('[data-section-id="674bd0a9673b226a9e4c66e0"]')) {
+    const lastDivider = document.querySelector('[data-section-id="674bd0a9673b226a9e4c66e0"]');
+    lastDivider.classList.add("divider");
   }
   
   // FAQ page
@@ -251,8 +278,30 @@ document.addEventListener("DOMContentLoaded", function () {
   */
   const mobileMenu = document.querySelector(".header-menu--folder-list .header-menu-nav-wrapper");
   if (mobileMenu) {
-    const wrapper = document.querySelector('.header-menu-nav-wrapper');
-    wrapper.style.height = `calc(100vh - 106px)`;
+    const mobileNavWrapper = document.querySelector('.header-menu-nav-wrapper');
+    // check if announcebar
+    const announcementBar = document.querySelector('.sqs-announcement-bar-dropzone');
+	// Function to set the height dynamically
+    function setMobileNavWrapperHeight() {
+      if (announcementBar && announcementBar.childElementCount > 0) {
+        mobileNavWrapper.style.height = `calc(100vh - 148px)`;
+      } else {
+        mobileNavWrapper.style.height = `calc(100vh - 124px)`;
+      }
+    }
+
+    setMobileNavWrapperHeight();
+
+    if (announcementBar) {
+      const observer = new MutationObserver(() => {
+        setMobileNavWrapperHeight(); 
+      });
+
+      observer.observe(announcementBar, {
+        childList: true, 
+      });
+    }
+    
   	mobileMenu.innerHTML = `
 	  <div class="mobile-nav-item nav-list--primary">
         <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active">
@@ -281,6 +330,14 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
       <div class="mobile-nav-item nav-list--secondary">
+		<div class="container header-menu-nav-item header-menu-nav-item--collection">
+          <a href="/gift-certificates">
+            <div class="header-menu-nav-item-content">
+              <span class="text-underline">Gift Certificates</span>
+              <span> → </span>
+            </div>
+          </a>
+        </div>
         <div class="container header-menu-nav-item header-menu-nav-item--collection">
           <a href="/about">
             <div class="header-menu-nav-item-content">
@@ -316,17 +373,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <div class="mobile-nav-item nav-list--third">
         <div class="container header-menu-nav-item header-menu-nav-item--collection">
-          <a href="/policies">
+          <a href="/first-timers/#cancellations">
             <div class="header-menu-nav-item-content">
               <span class="text-underline">Cancellation Policy</span>
-              <span> → </span>
-            </div>
-          </a>
-        </div>
-        <div class="container header-menu-nav-item header-menu-nav-item--collection">
-          <a href="/gift-certificates">
-            <div class="header-menu-nav-item-content">
-              <span class="text-underline">Gift Certificates</span>
               <span> → </span>
             </div>
           </a>
@@ -343,7 +392,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	`;
   }
 });
-    
+  
 </script>
-
-
