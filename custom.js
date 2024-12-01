@@ -278,15 +278,18 @@ document.addEventListener("DOMContentLoaded", function () {
   */
   const mobileMenu = document.querySelector(".header-menu--folder-list .header-menu-nav-wrapper");
   if (mobileMenu) {
+    const viewportHeight = window.innerHeight;
     const mobileNavWrapper = document.querySelector('.header-menu-nav-wrapper');
     // check if announcebar
     const announcementBar = document.querySelector('.sqs-announcement-bar-dropzone');
 	// Function to set the height dynamically
     function setMobileNavWrapperHeight() {
       if (announcementBar && announcementBar.childElementCount > 0) {
-        mobileNavWrapper.style.height = `calc(100vh - 148px)`;
+        // mobileNavWrapper.style.height = `calc(100vh - 148px)`;
+        mobileNavWrapper.style.height = `${viewportHeight - 148}px`;
       } else {
-        mobileNavWrapper.style.height = `calc(100vh - 124px)`;
+        // mobileNavWrapper.style.height = `calc(100vh - 124px)`;
+        mobileNavWrapper.style.height = `${viewportHeight - 124}px`;
       }
     }
 
