@@ -4,31 +4,6 @@
   src: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/67239c4e144f8f796325908b/1730387022596/FavoritMono-Regular.otfFontURL');
 }
 
-/* Disable cursor & hover of all links */
-a,
-.btn.btn-custom, 
-button.toggle-button,
-button.newsletter-form-button {
-    cursor: none !important;
-}
-a:hover,
-.btn.btn-custom:hover, 
-.btn.btn-custom:hover, 
-button.newsletter-form-button:hover {
-    cursor: none !important;
-}
-
-:root {
-    --tweak-newsletter-block-button-background-color: #2C272A;
-  --tweak-newsletter-block-button-text-color: #2C272A;
-}
-
-body:before {
-  content: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f6267e5d6c6fb66e0fef/1732572710939/Logomark_Orange.png') 
-          url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f647d75db40e89395eef/1732572743173/Logomark_Black.png');
-  display: none;
-}
-
 h1 {
   font-family: 'FavoritMono-Regular';
 	text-transform: uppercase;
@@ -132,9 +107,9 @@ h2 {
   }
 }
 
-/* CUSTOM CURSOR */
+/* CUSTOM CURSOR - CURRENTLY DISABLED */
 
-html, 
+/* html, 
 body,
 a,
 button.toggle-button {
@@ -157,6 +132,33 @@ textarea {
 .sqs-system-button {
   cursor: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f6267e5d6c6fb66e0fef/1732572710939/Logomark_Orange.png') 32 32, auto !important;
 }
+*/
+
+/* Disable cursor & hover of all links */
+/*a,
+.btn.btn-custom, 
+button.toggle-button,
+button.newsletter-form-button {
+    cursor: none !important;
+}
+a:hover,
+.btn.btn-custom:hover, 
+.btn.btn-custom:hover, 
+button.newsletter-form-button:hover {
+    cursor: none !important;
+}
+
+:root {
+    --tweak-newsletter-block-button-background-color: #2C272A;
+  --tweak-newsletter-block-button-text-color: #2C272A;
+}
+
+body:before {
+  content: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f6267e5d6c6fb66e0fef/1732572710939/Logomark_Orange.png') 
+          url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f647d75db40e89395eef/1732572743173/Logomark_Black.png');
+  display: none;
+} */
+
 
 section.divider {
   min-height: 15vh !important;
@@ -553,6 +555,30 @@ body#collection-67243922c95e273f8e721433 {
 }
 
 @media (max-width: 579px) {
+  .blog-section .summary-content{
+    position: relative;
+  }
+  .sqs-block-summary-v2 .summary-thumbnail-outer-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .blog-section .fluid-engine:not(.is-editing)>div:first-child .summary-item{
+    height: fit-content !important;
+  }
+  .sqs-block-summary-v2 .summary-thumbnail-outer-container *{
+    width: 100%;
+    height: 100%;
+  }
+ .blog-section .summary-item-list.sqs-gallery.sqs-gallery-design-autocolumns{
+    height: fit-content !important;
+  }
+  .blog-section .fluid-engine:not(.is-editing)>div:nth-child(2) .summary-item-list .summary-item{
+    height: fit-content !important;
+  }
+  .blog-section .summary-content {
+    gap: 2rem;
+  }
   .section-title {
     font-size: 48px;
     line-height: 57px;
@@ -802,6 +828,15 @@ body#collection-6723c46cea42c01d28d9b79e .header-burger-btn.burger {
       hyphens: auto;
     }
   }
+}
+
+/*HIDE NEXT PREVIOUS CONTROLS AND TAGS AT BOTTOM OF BLOG*/
+.item-pagination[data-collection-type^="blog"]{
+	display: none;
+}
+
+.blog-meta-item--tags {
+  display: none;
 }
 
 
