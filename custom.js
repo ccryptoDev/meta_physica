@@ -1,15 +1,16 @@
 <script>
   
 document.addEventListener("DOMContentLoaded", function () {
-  /* document.querySelectorAll("a").forEach(link => {
-        link.style.cursor = "url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f6267e5d6c6fb66e0fef/1732572710939/Logomark_Orange.png') 32 32, auto !important";
-    });
-
-    document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("mouseover", () => {
-            link.style.cursor = "url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/6744f647d75db40e89395eef/1732572743173/Logomark_Black.png') 32 32, auto !important";
-        });
-    }); */
+  /* book buttons */
+  const bookButtons = document.querySelectorAll('.btn-custom');
+  bookButtons.forEach(button => {
+    const bookingUrl = button.getAttribute('data-book-page');
+    if (bookingUrl) {
+      button.addEventListener('click', function () {
+        window.location.href = bookingUrl;
+      });
+    }
+  });
   
   /*
   * Redirect to Home when clicking on Splash
