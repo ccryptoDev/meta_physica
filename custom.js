@@ -52,9 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const massageRoomDivider = document.querySelector('[data-section-id="673ab4ba18cc943de2c47225"]');
     massageRoomDivider.classList.add("divider");
   }
-  // divider of the last drawer
+  // first timer
   if (document.querySelector('[data-section-id="674bce80c6aa4452cac62959"]')) {
-    const lastDivider = document.querySelector('[data-section-id="674bce80c6aa4452cac62959"]');
+    const firstTimerDivider = document.querySelector('[data-section-id="674bce80c6aa4452cac62959"]');
+    firstTimerDivider.classList.add("divider");
+  }
+  // divider of the last drawer
+  if (document.querySelector('[data-section-id="674f81e2342b894b97e8f1cf"]')) {
+    const lastDivider = document.querySelector('[data-section-id="674f81e2342b894b97e8f1cf"]');
     lastDivider.classList.add("divider");
   }
   
@@ -69,9 +74,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const divider = document.querySelector('[data-section-id="6740feedf6146a12dfff05ed"]');
     divider.classList.add("divider");
   }
-  // divider of the last drawer
+  // first timer
   if (document.querySelector('[data-section-id="674bcf459a090574e2cfb955"]')) {
-    const lastDivider = document.querySelector('[data-section-id="674bcf459a090574e2cfb955"]');
+    const firstTimerDivider = document.querySelector('[data-section-id="674bcf459a090574e2cfb955"]');
+    firstTimerDivider.classList.add("divider");
+  }
+  // divider of the last drawer
+  if (document.querySelector('[data-section-id="6750d0c79dc6e8719728545a"]')) {
+    const lastDivider = document.querySelector('[data-section-id="6750d0c79dc6e8719728545a"]');
     lastDivider.classList.add("divider");
   }
   
@@ -96,9 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const divider = document.querySelector('[data-section-id="674103721435b762a1f1bc37"]');
     divider.classList.add("divider");
   }
-  // divider of the last drawer
+  // first timer
   if (document.querySelector('[data-section-id="674bd0a9673b226a9e4c66e0"]')) {
-    const lastDivider = document.querySelector('[data-section-id="674bd0a9673b226a9e4c66e0"]');
+    const firstTimerDivider = document.querySelector('[data-section-id="674bd0a9673b226a9e4c66e0"]');
+    firstTimerDivider.classList.add("divider");
+  }
+  // divider of the last drawer
+  if (document.querySelector('[data-section-id="6750d184f307263eca130253"]')) {
+    const lastDivider = document.querySelector('[data-section-id="6750d184f307263eca130253"]');
     lastDivider.classList.add("divider");
   }
   
